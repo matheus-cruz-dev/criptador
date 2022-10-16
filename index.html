@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Roboto:wght@400;900&display=swap"
+    rel="stylesheet">
+  <title>Criptador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="inputs">
+      <label for="">Texto</label>
+      <input id="valor" type="text" placeholder="Dígite seu texto aqui">
+      <br>
+      <label for="">Chave</label>
+      <input id="chave" type="text" placeholder="Dígite a sua chave">
+    </div>
+
+    <div class="buttons">
+      <button onclick="executartextoascii()">Texto em ASCII</button>
+      <button onclick="executarasciitexto()">ASCII em Texto</button>
+      <button onclick="criptografar()">Criptografar</button>
+      <button onclick="descriptografar()">Descriptografar</button>
+    </div>
+
+    <div class="resultado">
+      <textarea name="resultado" id="resultado" cols="50" rows="10"></textarea>
+    </div>
+
+    <div class="buttons">
+      <button onclick="copiarTexto()">Copiar</button>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
